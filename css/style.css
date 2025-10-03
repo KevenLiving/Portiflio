@@ -9885,7 +9885,7 @@ textarea.form-control {
       content: "";
       position: absolute;
       inset: 0;
-      filter: brightness(25%) blur(3px);
+      filter: brightness(35%) blur(3px);
       z-index: -1;
     }
 
@@ -9902,7 +9902,7 @@ textarea.form-control {
       content: "";
       position: absolute;
       inset: 0;
-      filter: brightness(25%) blur(3px);
+      filter: brightness(35%) blur(3px);
       z-index: -1;
     }
 

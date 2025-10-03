@@ -103,7 +103,7 @@
 							<span class="flaticon-loyalty"></span>
 						</div>
 						<div class="text">
-							<strong class="number" data-number="0">0</strong>
+							<strong class="number" data-number="2">2</strong>
 							<span>Clientes Satisfeitos</span>
 						</div>
 					</div>
@@ -692,6 +692,8 @@
 		
 	</body>
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
 	(function(){
@@ -703,12 +705,21 @@
 
 		emailjs.sendForm('service_snvea09', 'template_2bmo7v7', this)
 			.then(function() {
-				alert("Mensagem enviada com sucesso!");
+				Swal.fire({
+				icon: 'success',
+				title: 'Sucesso!',
+				text: 'Mensagem enviada com sucesso!',
+				timer: 3000,
+				showConfirmButton: false
+				});
+			document.getElementById("form-contato").reset();
 			}, function(error) {
-				alert("Ocorreu um erro: " + JSON.stringify(error));
+				Swal.fire({
+				icon: 'error',
+				title: 'Erro!',
+				text: 'Ocorreu um erro: ' + JSON.stringify(error),
+				});
 			});
-
-		this.reset(); 
 	});
 </script>
 
