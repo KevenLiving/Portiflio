@@ -5,6 +5,34 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+ #image_slider01 {
+      background-image: url("../images/keven01.png");
+    }
+
+ #image_slider02 {
+      background-image: url("../images/web_woman.png");
+    }
+
+ #email_01 {
+      overflow-wrap: break-word;
+      word-break: break-all;
+      white-space: normal;
+    } 
+
+#img_project1 {
+      background: url(../images/work-1.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+#img_project2 {
+      background: url(../images/work-2.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  
 #whatsapp_icon {
   width: 45px;
   height: 45px;
@@ -9801,3 +9829,87 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+
+
+  /*Trabalhando melhor a responsividade da página*/ 
+
+  /*Ajustando dimensão de tablete*/ 
+  @media (max-width: 820px) {
+    
+    /* Mais visibilidade na cor do texto*/ 
+    #change_color {
+      color: #000;
+    }
+
+    /* Alterando imagens para se enquadrar ao novo layout responsivo*/ 
+    #image_slider01 {
+      background-image: url("../images/banner.png");
+    }
+
+    #image_slider02 {
+      background-image: url("../images/banner.png");
+    }
+
+    /* Destravando barra de rolagem */
+
+
+    .owl-carousel .owl-stage {
+    touch-action: pan-y !important;
+    -ms-touch-action: pan-y !important;
+    }
+
+    .owl-carousel.owl-drag .owl-item {
+      touch-action: pan-y !important;
+      -ms-touch-action: pan-y !important;
+    }
+    
+    
+  }
+
+  /*Ajustando dimensão de celular*/ 
+  @media (max-width: 412px) {
+
+    #img_project1 {
+      position: relative;
+      overflow: hidden;
+    }
+
+    #img_project1::before {
+      background: url(../images/work-1.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      content: "";
+      position: absolute;
+      inset: 0;
+      filter: brightness(25%) blur(3px);
+      z-index: -1;
+    }
+
+    #img_project2 {
+      position: relative;
+      overflow: hidden;
+    }
+
+    #img_project2::before {
+      background: url(../images/work-2.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      content: "";
+      position: absolute;
+      inset: 0;
+      filter: brightness(25%) blur(3px);
+      z-index: -1;
+    }
+
+    #redes_sociais {
+      padding-top: 60px;
+      width: 100%;
+      justify-content: center;
+      display: flex;
+    }
+}

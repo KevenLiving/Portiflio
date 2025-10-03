@@ -43,18 +43,18 @@
 	</nav>
 	<section id="home-section" class="hero">
 		<div class="home-slider owl-carousel">
-			<div class="slider-item">
+			<div id="slider" class="slider-item">
 				<div class="overlay"></div>
 				<div class="container-fluid px-md-0">
 					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-						<div class="one-third order-md-last img" style="background-image:url(images/keven01.png);">
+						<div id="image_slider01" class="one-third order-md-last img">
 							<div class="overlay"></div>
 							<div class="overlay-1"></div>
 						</div>
 						<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text">
 								<span class="subheading">Olá! Aqui é Keven Medeiros</span>
-								<h1 class="mb-4 mt-3"> <span>Python/Web</span> &amp; Developer</h1>
+								<h1 id="change_color" class="mb-4 mt-3"> <span>Python/Web</span> &amp; Developer</h1>
 								<p><a href="#contact-section" class="btn btn-primary">Contrate-me</a> <a href="CV/Currículo.pdf" class="btn btn-primary btn-outline-primary" target="_blank" download="Currículo_Keven.pdf">Baixar CV</a></p>
 							</div>
 						</div>
@@ -66,14 +66,14 @@
 				<div class="overlay"></div>
 				<div class="container-fluid px-md-0">
 					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-						<div class="one-third order-md-last img" style="background-image:url(images/web_woman.png);">
+						<div id="image_slider02" class="one-third order-md-last img">
 							<div class="overlay"></div>
 							<div class="overlay-1"></div>
 						</div>
 						<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text">
 								<span class="subheading">Criador de Soluções Web</span>
-								<h1 class="mb-4 mt-3"><span>Tecnologia</span> que transforma negócios.</h1>
+								<h1 id="change_color" class="mb-4 mt-3"><span>Tecnologia</span> que transforma negócios.</h1>
 								<p><a href="#contact-section" class="btn btn-primary">Contrate-me</a> <a href="CV/Currículo.pdf" class="btn btn-primary btn-outline-primary" download="Currículo_Keven.pdf">Baixar CV</a></p>
 							</div>
 						</div>
@@ -108,7 +108,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+				<div id="teste" class="col-md-3 justify-content-center counter-wrap ftco-animate">
 					<div class="block-18 d-flex">
 						<div class="icon d-flex justify-content-center align-items-center">
 							<span class="flaticon-coffee"></span>
@@ -140,7 +140,7 @@
 				<div class="col-md-6 col-lg-5 d-flex">
 					<div class="img-about img d-flex align-items-stretch">
 						<div class="overlay"></div>
-						<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/keven-1-center.png);">
+						<div id="img_about_me" class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/keven-1-center.png);">
 						</div>
 					</div>
 				</div>
@@ -157,7 +157,7 @@
 									<li class="d-flex"><span>Idade:</span> <span>21 anos</span></li>
 									<li class="d-flex"><span>Localização:</span> <span>Jucurutu, RN</span></li>
 									<li class="d-flex"><span>Formação:</span> <span>Técnico em Informática para Internet (Em andamento)</span></li>
-									<li class="d-flex"><span>Email:</span> <span>keven.developerweb@gmail.com</span></li>
+									<li class="d-flex"><span>Email:</span> <span id="email_01">keven.developerweb@gmail.com</span></li>
 									<li class="d-flex"><span>Telefone: </span> <span>(84) 99624 9385</span></li>
 								</ul>
 							</div>
@@ -384,11 +384,11 @@
 					<div class="w-100 py-4">
 						<h2>Tem um projeto em mente?</h2>
 						<p>Entre em contato para discutirmos como minhas habilidades em Python e desenvolvimento web podem transformar suas necessidades em aplicações funcionais e concretas.</p>
-						<p class="mb-0"><a href="#contact-section" class="btn btn-white py-3 px-4">Fale comigo</a></p>
+						<p class="mb-0 "><a href="#contact-section" class="btn btn-white py-3 px-4">Fale comigo</a></p>
 					</div>
 				</div>
 				<div class="col-md-4 col-lg-4 d-flex align-items-end">
-					<img src="images/keven-2.png" class="img-fluid" alt="">
+					<img src="images/Keven_FundoTrnasparente.png" class="img-fluid" alt="">
 				</div>
 			</div>
 		</div>
@@ -404,8 +404,8 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-1.png);">
+				<div id="projeto" class="col-md-3">
+					<div id="img_project1" class="project img shadow ftco-animate d-flex justify-content-center align-items-center" >
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
 							<h3><a href="https://github.com/KevenLiving/scraper-ml.git" target="_blank">Scraper do Mercado Livre</a></h3>
@@ -414,8 +414,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
-					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-2.png);">
+				<div id="projeto" class="col-md-3">
+					<div id="img_project2" class="project img shadow ftco-animate d-flex justify-content-center align-items-center">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
 							<h3><a href="https://github.com/KevenLiving/CHURCHFLOW.git" target="_blank">ChurchFlow</a></h3>
@@ -590,7 +590,7 @@
 								<span class="fa fa-paper-plane"></span>
 							</div>
 							<div class="text">
-								<p><span>Email:</span> <a href="mailto:keven.developerweb@gmail.com">keven.developerweb@gmail.com</a></p>
+								<p id="email_01"><span>Email:</span> <a href="mailto:keven.developerweb@gmail.com">keven.developerweb@gmail.com</a></p>
 							</div>
 						</div>
 						<div class="dbox w-100 d-flex">
@@ -648,10 +648,10 @@
 							<ul>
 								<li><span class="icon fa fa-map marker"></span><span class="text">Jucurutu, RN</span></li>
 								<li><a href="tel://+5584996249385"><span class="icon fa fa-phone"></span><span class="text">(84) 99624 9385</span></a></li>
-								<li><a href="mailto:keven.developerweb@gmail.com"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">keven.developerweb@gmail.com</span></a></li>
+								<li><a href="mailto:keven.developerweb@gmail.com"><span class="icon fa fa-paper-plane pr-4"></span><span id="email_01" class="text">keven.developerweb@gmail.com</span></a></li>
 							</ul>
 						</div>
-						<ul class="ftco-footer-social list-unstyled mt-2">
+						<ul id="redes_sociais" class="ftco-footer-social list-unstyled mt-2">
 							<li class="ftco-animate"><a target="_blank" href="https://www.instagram.com/_kevenmedeiros/"><span class="fa fa-instagram"></span></a></li>
 							<li class="ftco-animate"><a target="_blank" id="i_icon_git" href="https://github.com/KevenLiving"><span id="icon_git"></span></a></li>
 							<li class="ftco-animate"><a target="_blank" id="i_icon_linkedin" href="https://www.linkedin.com/in/keven-medeiros-88a74037a"><span id="icon_linkedin"></span></a></li>
